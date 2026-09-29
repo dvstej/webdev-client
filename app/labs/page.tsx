@@ -15,20 +15,13 @@ export default function Labs() {
           <Link href="/labs/lab3">Lab 3: JavaScript Fundamentals</Link>
         </li>
         <li>
-          <Link href="/labs/lab4">Lab 4: Placeholder</Link>
+          <Link href="/labs/lab4" id="wd-lab4-link"
+          >Lab 4: Placeholder</Link>
         </li>
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
-        <li>
-  <a
-    href="https://github.com/dvstej/webdev-client"
-    id="wd-github"
-    target="_blank"
-  >
-    GitHub
-  </a>
-</li>
+        
          <li>
           <Link href="/" id="wd-kambaz-link">
             Kambaz
