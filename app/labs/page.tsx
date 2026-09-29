@@ -20,6 +20,15 @@ export default function Labs() {
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
+        <li>
+  <a
+    href="https://github.com/dvstej/webdev-client"
+    id="wd-github"
+    target="_blank"
+  >
+    GitHub
+  </a>
+</li>
          <li>
           <Link href="/" id="wd-kambaz-link">
             Kambaz
