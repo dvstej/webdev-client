@@ -1,25 +1,22 @@
 import "../globals.css";
-import { ReactNode } from "react";
-import CourseNavigation from "./Navigation";
 
-export default async function CourseLayout({
+import type { ReactNode } from "react";
+import KambazNavigation from "./Navigation";
+import "./kambaz.css";
+
+export default function KambazLayout({
   children,
-  params,
 }: {
   children: ReactNode;
-  params: Promise<{ cid: string }>;
 }) {
-  const { cid } = await params;
-
   return (
-    <div className="flex gap-4">
-      <div className="hidden w-[140px] shrink-0 md:block">
-        <CourseNavigation cid={cid} />
-      </div>
+    <div id="wd-kambaz">
+      <KambazNavigation />
 
-      <div className="min-w-0 flex-1">
+      <div className="wd-main-content-offset">
         {children}
       </div>
     </div>
   );
 }
+
