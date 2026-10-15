@@ -1,0 +1,61 @@
+
+export default function Flex() {
+  return (
+    <div id="wd-css-flex">
+      <h2>Flex</h2>
+
+      <div className="wd-flex-row-container">
+        
+<div className="wd-bg-color-yellow wd-width-110px">
+  Column 1
+</div>
+
+        <div className="wd-bg-color-blue wd-fg-color-white">
+          Column 2
+        </div>
+
+       
+<div className="wd-bg-color-red wd-fg-color-white wd-flex-grow-1">
+  Column 3
+</div>
+
+      </div>
+
+      
+<h3>On Your Own - Flex Row</h3>
+
+<div className="wd-flex-row-container" id="wd-my-flex">
+  <div className="wd-bg-color-yellow wd-width-110px">
+    Fixed Column
+  </div>
+
+  <div className="wd-bg-color-blue wd-fg-color-white wd-flex-grow-1">
+    Growing Column
+  </div>
+
+  <div className="wd-bg-color-red wd-fg-color-white">
+    Normal Column
+  </div>
+</div>
+
+
+<h3>With AI - Flex Row</h3>
+
+<div className="wd-flex-row-container" id="wd-ai-flex">
+  <div className="wd-bg-color-yellow wd-width-110px">
+    Fixed Column
+  </div>
+
+  <div className="wd-bg-color-blue wd-fg-color-white">
+    Normal Column
+  </div>
+
+  <div className="wd-bg-color-red wd-fg-color-white wd-flex-grow-1">
+    Growing Column
+  </div>
+</div>
+
+
+    </div>
+  );
+}

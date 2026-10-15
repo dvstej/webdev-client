@@ -4,18 +4,40 @@ import Lesson from "./Lesson";
 export default function Modules() {
   return (
     <div>
-      <button>Collapse All</button>
-      <button>View Progress</button>
+    
+<div className="mb-3 flex flex-wrap items-center gap-2">
+  <button
+    type="button"
+    className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+  >
+    Collapse All
+  </button>
 
-      <select>
-        <option>Publish All</option>
-        <option>Publish all modules and items</option>
-        <option>Publish modules only</option>
-        <option>Unpublish all</option>
-      </select>
+  <button
+    type="button"
+    className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+  >
+    View Progress
+  </button>
 
-      <button>+ Module</button>
-      <ul id="wd-modules">
+  <select
+    defaultValue="publish-all"
+    className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
+  >
+    <option value="publish-all">Publish All</option>
+  </select>
+
+  <button
+    type="button"
+    className="rounded border border-red-600 bg-red-600 px-3 py-1.5 text-sm font-medium text-white"
+  >
+    + Module
+  </button>
+</div>
+
+    
+<ul id="wd-modules" className="m-0 list-none p-0">
+
   <Module title="Week 1">
     <Lesson title="LEARNING OBJECTIVES">
       <li>Introduction to the course</li>
@@ -59,6 +81,34 @@ export default function Modules() {
     <li>CSS Styling</li>
   </Lesson>
 </Module>
+
+{/* On Your Own - Personal Module */}
+<Module title="Week 4 - Advanced React Development">
+  <Lesson title="REACT HOOKS">
+    <li className="wd-content-item">
+      Understanding useState and useEffect
+    </li>
+    <li className="wd-content-item">
+      Building Interactive React Components
+    </li>
+  </Lesson>
+
+  <Lesson title="NEXT.JS FUNDAMENTALS">
+    <li className="wd-content-item">
+      Introduction to Next.js App Router
+    </li>
+  </Lesson>
+</Module>
+
+{/* With AI - Sample Module */}
+<Module title="Sample module (AI)">
+  <Lesson title="Sample lesson (AI)">
+    <li className="wd-content-item">
+      Introduction to AI-generated learning content
+    </li>
+  </Lesson>
+</Module>
+
 </ul>
     </div>
   );
